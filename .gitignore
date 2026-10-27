@@ -1,0 +1,16 @@
+*.py
+*.ipynb
+*.R
+*.r
+*.pyc
+*.bak
+*.map
+.env*
+/private*/
+/raw*/
+/source*/
+/src/
+/scripts/
+/data/
+/output/
+!web/data/
