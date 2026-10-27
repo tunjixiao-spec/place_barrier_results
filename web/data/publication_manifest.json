@@ -1,6 +1,6 @@
 {
-  "version": "presentation-2026-10-27-v2",
-  "scientific_data_version": "results-2026-10-27",
+  "version": "interactive-2026-10-27-v3",
+  "scientific_data_version": "frozen 02j/E02 + stage5 C-CB diagnostics",
   "hash_scope": "committed web payload bytes, after existing Git newline normalization; manifest itself excluded",
   "scientific_experiments_added": 0,
   "files": [
@@ -11,18 +11,38 @@
     },
     {
       "path": "app.js",
-      "bytes": 15809,
-      "sha256": "3a422f7b6df79d4b418a2f7d959737c50400d83457060d9758fa877038a9ce95"
+      "bytes": 30918,
+      "sha256": "4323e62c8cb83427ddab8bbf4201922c64776560ce608a5285addb3b1ef85507"
     },
     {
       "path": "applications.html",
-      "bytes": 10463,
-      "sha256": "4355c9c77bfbe95a7f67abcd535deee5044eb08ce53bac84e783dc3750eda131"
+      "bytes": 10197,
+      "sha256": "9343e9da160e08385941dfe98652fe5cb4dbbc49967943a0df666949b221cdd0"
+    },
+    {
+      "path": "data/interactive_extra.json",
+      "bytes": 3020356,
+      "sha256": "4954707002d53ae50e8bca6c66606cf927276535b06f97400bf3cfc79bffc42d"
     },
     {
       "path": "data/mountain_systems.json",
       "bytes": 668,
       "sha256": "724da6ba60671d076e762c66c6315bc012141565f4211159d9b7edd30e10ae97"
+    },
+    {
+      "path": "data/network_B_T20_base.json",
+      "bytes": 566132,
+      "sha256": "ecba02d4d252f3e0688d58fb2837dcd6b8547df930597d209e9fb96285ca0eaf"
+    },
+    {
+      "path": "data/network_C_T20_base.json",
+      "bytes": 1961444,
+      "sha256": "3d3f353b9be300aec6143c93eb0abcebb8bd0f43fdc37a4df18e772f0e2eca5a"
+    },
+    {
+      "path": "data/network_CB_T20_base.json",
+      "bytes": 4569387,
+      "sha256": "60d5fa790f3cfe05df2a695f89a219ad81d36c7bfe29421e007d0f23a48dd465"
     },
     {
       "path": "data/results.json",
@@ -31,8 +51,8 @@
     },
     {
       "path": "design-notes.html",
-      "bytes": 4395,
-      "sha256": "6264e6d192ae8c7d097399a27afe11cecf0273ed9f1dc2314d45e99083196a94"
+      "bytes": 4514,
+      "sha256": "0ea235f28dd830a2a57f9217776ca796d5a1acf46c3f7882c1022bdf6adce198"
     },
     {
       "path": "downloads/C_T20_base_primary_windows.csv",
@@ -161,8 +181,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 16087,
-      "sha256": "334885a7f4bfa29e694cf87697f0912721ac93f27583f9e588d94daf353d43dd"
+      "bytes": 9429,
+      "sha256": "57e4144b0848077aef7b11edb2d2142a20a2a7f080bb47be2d1dc13c4af690d2"
     },
     {
       "path": "README.md",
@@ -171,8 +191,8 @@
     },
     {
       "path": "style.css",
-      "bytes": 22967,
-      "sha256": "60c5c8deb8382c2e7dc1994121c7ad1d49533b82d20cc74fa47edf7b14580f60"
+      "bytes": 28474,
+      "sha256": "1405bb337b52f9e494fcae16312b9f1549e963c4fb91e3d7ceaae635b6b4472c"
     }
   ]
 }
