@@ -1,8 +1,9 @@
 {
-  "version": "interactive-2026-10-27-v3",
-  "scientific_data_version": "frozen 02j/E02 + stage5 C-CB diagnostics",
-  "hash_scope": "committed web payload bytes, after existing Git newline normalization; manifest itself excluded",
-  "scientific_experiments_added": 0,
+  "version": "two-sided-atlas-2026-10-28-v5",
+  "scientific_data_version": "frozen 02j/E02/stage3 and stage5 diagnostics",
+  "hash_scope": "committed web payload bytes after Git newline normalization; manifest excluded",
+  "new_statistical_experiments": 0,
+  "new_display_aggregation": "20km cells; >=5 effective sources; selected window or side-deduplicated reliable-window union",
   "files": [
     {
       "path": ".nojekyll",
@@ -11,13 +12,683 @@
     },
     {
       "path": "app.js",
-      "bytes": 30918,
-      "sha256": "4323e62c8cb83427ddab8bbf4201922c64776560ce608a5285addb3b1ef85507"
+      "bytes": 27194,
+      "sha256": "bb1770534ab0e94cdf1a8542ea2b1dcf9a7f0ed61bbe0b1aec81ab390947c566"
     },
     {
       "path": "applications.html",
-      "bytes": 10197,
-      "sha256": "9343e9da160e08385941dfe98652fe5cb4dbbc49967943a0df666949b221cdd0"
+      "bytes": 10199,
+      "sha256": "94ef0fbf0138b55f1f50e29b5f7d9af7012a08c2573ccc8d8d110bf68f39013b"
+    },
+    {
+      "path": "article.css",
+      "bytes": 28474,
+      "sha256": "1405bb337b52f9e494fcae16312b9f1549e963c4fb91e3d7ceaae635b6b4472c"
+    },
+    {
+      "path": "data/atlas/m000.json",
+      "bytes": 92474,
+      "sha256": "cd2645cad12b68bac5130e4116dffeb464c3476fa4466d64babaa0d374c43487"
+    },
+    {
+      "path": "data/atlas/m001.json",
+      "bytes": 4563,
+      "sha256": "a915790a5f963a26fbdb5693f7b1a8fcbf6738843f25d013f97ff32e5b5bf9cc"
+    },
+    {
+      "path": "data/atlas/m002.json",
+      "bytes": 83120,
+      "sha256": "ebdeea9dfec2cf79c3b03b50b9b85d8426a562c1e646d60fd3c10a12f2b95e51"
+    },
+    {
+      "path": "data/atlas/m003.json",
+      "bytes": 121883,
+      "sha256": "cf47c35fd0f6cc3097b290f114f1c63cdbd4043d79653138543dd5733ad97513"
+    },
+    {
+      "path": "data/atlas/m004.json",
+      "bytes": 43130,
+      "sha256": "36f254b816636eee2428edafdaa6b5e76fe439a618e2c66eeee33696589de2e0"
+    },
+    {
+      "path": "data/atlas/m005.json",
+      "bytes": 121716,
+      "sha256": "529e27653fcf57cc09696d19c464f3448cc03f516c23a6ac29bff9b9207959e8"
+    },
+    {
+      "path": "data/atlas/m006.json",
+      "bytes": 127502,
+      "sha256": "72de3050832e7f1d888937788fc7e73f8c86c0581891ec923327727ee61febe0"
+    },
+    {
+      "path": "data/atlas/m007.json",
+      "bytes": 63474,
+      "sha256": "d0a5faf39144c8e844cfc5329c1afd0514cacf15dd54f029dbf85b6e2164e083"
+    },
+    {
+      "path": "data/atlas/m008.json",
+      "bytes": 3868,
+      "sha256": "bc463daa3e391960912a39a65992490f966a497fa4405fc70be6580c093dd8cc"
+    },
+    {
+      "path": "data/atlas/m009.json",
+      "bytes": 95786,
+      "sha256": "b764a9de22d76a1861c81c8245352fb03bb27da8cc39a4f30e94bf02ee9417e7"
+    },
+    {
+      "path": "data/atlas/m010.json",
+      "bytes": 75688,
+      "sha256": "b56e958d2730583557502f1b1006e24b860acffea82ba72c11613d6499124699"
+    },
+    {
+      "path": "data/atlas/m011.json",
+      "bytes": 165460,
+      "sha256": "dfeda4ae6b9ff0be4cc624a389b8815c87a90d18ba94fc90249bc91c1830a9a7"
+    },
+    {
+      "path": "data/atlas/m012.json",
+      "bytes": 70906,
+      "sha256": "9e9973fc116c849d51d55897533645d71c0b132cad3121bcc819cc4542bdcf92"
+    },
+    {
+      "path": "data/atlas/m013.json",
+      "bytes": 61476,
+      "sha256": "5812e66a37be533b168d21f135a7694b737daec6d05f38bf90bbc7bd0121d614"
+    },
+    {
+      "path": "data/atlas/m014.json",
+      "bytes": 72311,
+      "sha256": "37d6f217fdb1f07032981791812aa2eae2b95a4c9aab9d52c76891fb55461365"
+    },
+    {
+      "path": "data/atlas/m015.json",
+      "bytes": 4270,
+      "sha256": "b594eec25e865afab3f0da53a8e8ab00031d43ad8adfa00039b7d8a0caa6a29d"
+    },
+    {
+      "path": "data/atlas/m016.json",
+      "bytes": 154823,
+      "sha256": "155f3969482974fefdf1879f71f86ea775c30d1fd5732dbbad54d5992066362d"
+    },
+    {
+      "path": "data/atlas/m017.json",
+      "bytes": 4898,
+      "sha256": "37ffc97ed7c448c9076f35c2ca04e82b7c092b0b5b0a5c9b82c3f7212032b1b8"
+    },
+    {
+      "path": "data/atlas/m018.json",
+      "bytes": 4969,
+      "sha256": "f8059872d5ae85f29e0b438da3c441b4b7327ff61221fdf7ddc78d303f8eb7d3"
+    },
+    {
+      "path": "data/atlas/m019.json",
+      "bytes": 181105,
+      "sha256": "17c783c2d189a5e17d6761c66bf345c0ebcd505e8c1d560a4c756526548f7b90"
+    },
+    {
+      "path": "data/atlas/m020.json",
+      "bytes": 55324,
+      "sha256": "7420e1561b1dd554da4852ab3840885dc69824fd940c2ad6f9309047e3a8469a"
+    },
+    {
+      "path": "data/atlas/m021.json",
+      "bytes": 4590,
+      "sha256": "19ba3c7c657c90712ea6415c859d60ecc2c91efe86ffbd9fe052d7523518f3aa"
+    },
+    {
+      "path": "data/atlas/m022.json",
+      "bytes": 64304,
+      "sha256": "ed257fd310554a6c7917b6ca91154070bc8ab0cdf9649e183417d8486d9a8dfc"
+    },
+    {
+      "path": "data/atlas/m023.json",
+      "bytes": 101380,
+      "sha256": "46506834fedb15ca2a9cb339f19e7d47e6baf05013d4481866346db13829ccd8"
+    },
+    {
+      "path": "data/atlas/m024.json",
+      "bytes": 224335,
+      "sha256": "8dfa9c4dc26759df43f1259d332c048ad4d345f4406494a98ace573969a6f735"
+    },
+    {
+      "path": "data/atlas/m025.json",
+      "bytes": 183357,
+      "sha256": "9fc3f80a1f2055d2a4ad7905138f32d24131a900464afccd9fe983fc2fba5e41"
+    },
+    {
+      "path": "data/atlas/m026.json",
+      "bytes": 3400,
+      "sha256": "f790306e9879d511157d412e94d8055a19ccbb638621ec15928e435d8f65a47f"
+    },
+    {
+      "path": "data/atlas/m027.json",
+      "bytes": 13730,
+      "sha256": "22a8fa4e2746ccbb072efb88dcb4e41748aca890b36c9ae96e15efe86bffa681"
+    },
+    {
+      "path": "data/atlas/m028.json",
+      "bytes": 7095,
+      "sha256": "8c624e50dc5997f75821515738606d7295829573c1ae3d7dc773df645a4a4db8"
+    },
+    {
+      "path": "data/atlas/m029.json",
+      "bytes": 4907,
+      "sha256": "8bdc668318f2ecf3c04aa510c084ea8a7aed92bbf5e55532d7d5ac8465449abc"
+    },
+    {
+      "path": "data/atlas/m030.json",
+      "bytes": 174619,
+      "sha256": "cd0408af1f90e097a4d4c5dfbf82c9f9a16c24d0167a8b76adde502598176ac6"
+    },
+    {
+      "path": "data/atlas/m031.json",
+      "bytes": 368763,
+      "sha256": "fc1da74c2106c6cc25a57cc23674b7b80fdf9051752e73c37caf07b243bc1260"
+    },
+    {
+      "path": "data/atlas/m032.json",
+      "bytes": 127283,
+      "sha256": "4fd8cef20f4bd83d1c369da28904cb267d3e3021c726565d4bc1208f3eb8181d"
+    },
+    {
+      "path": "data/atlas/m033.json",
+      "bytes": 161629,
+      "sha256": "7831de67622e5c2e0333c4120250940ef79d00f326695a361047088cf262ddab"
+    },
+    {
+      "path": "data/atlas/m034.json",
+      "bytes": 35554,
+      "sha256": "75536479772480768414a3882c9c73bb7b7a5e075ce7ffc36c51a0da70f3baa3"
+    },
+    {
+      "path": "data/atlas/m035.json",
+      "bytes": 8043,
+      "sha256": "73ef0c6c70122ac34b69440871a9343f83bbb4ba66ef1c770da589964d727e2c"
+    },
+    {
+      "path": "data/atlas/m036.json",
+      "bytes": 33251,
+      "sha256": "2b731463cd41695b8a052e8eb8e57b331074e4bbda37436109eae64ea4c5a9ca"
+    },
+    {
+      "path": "data/atlas/m037.json",
+      "bytes": 3602,
+      "sha256": "4987a19648211fe72b1c594b141236777019245abc0c56d4d131842198ac41f6"
+    },
+    {
+      "path": "data/atlas/m038.json",
+      "bytes": 65520,
+      "sha256": "b6324c5de29f8060506b7b62c666cd298bca1c395242ad5061cb6d4d88a33283"
+    },
+    {
+      "path": "data/atlas/m039.json",
+      "bytes": 33842,
+      "sha256": "a4d2a9d4c58a996cf3f3172bf8e324927b4ee70456fe772320c39e995574456d"
+    },
+    {
+      "path": "data/atlas/m040.json",
+      "bytes": 198104,
+      "sha256": "4dd43f5e72119b9e111afc72adf2aa63c578886da21725fd57feaec7f6ce3d45"
+    },
+    {
+      "path": "data/atlas/m041.json",
+      "bytes": 465783,
+      "sha256": "8dc04c6d455ff42b2d30567068092e19eeb742864f55dfbcff1fa06394e93421"
+    },
+    {
+      "path": "data/atlas/m042.json",
+      "bytes": 3788,
+      "sha256": "74b19bfc1e5d141402a77f8e4d79dbcdefda422160a6e06d6d6eae12426c0a23"
+    },
+    {
+      "path": "data/atlas/m043.json",
+      "bytes": 526912,
+      "sha256": "346e9e79fa19465fcfb8f31bfaa6f632124f68b0a7900ca306c012e7adb4e755"
+    },
+    {
+      "path": "data/atlas/m044.json",
+      "bytes": 37946,
+      "sha256": "cf17332d41084077f1c4d37310ea99d3d252b85827d650d0329ff8e1738fd437"
+    },
+    {
+      "path": "data/atlas/m045.json",
+      "bytes": 3778,
+      "sha256": "f4bcee5010782484741a0fe9b3a5a5237c20a50e48e61323689fbf9dc9fc7663"
+    },
+    {
+      "path": "data/atlas/m046.json",
+      "bytes": 102271,
+      "sha256": "7d3eac3e62e055ccee842cdf4f094f312999bcecd1dc7864f25901dbef8de382"
+    },
+    {
+      "path": "data/atlas/m047.json",
+      "bytes": 3556,
+      "sha256": "1a2df7ee5ab1e27d519ef9c2ee496cbc2a8896394586c0e71846e0c02a22e826"
+    },
+    {
+      "path": "data/atlas/m048.json",
+      "bytes": 4064,
+      "sha256": "f4b2ed8b66e8a91ffbaac8d47551b5b5ab72316dcaf9e70a40956e3a1463851e"
+    },
+    {
+      "path": "data/atlas/m049.json",
+      "bytes": 67849,
+      "sha256": "224fe0eb9f6115d4b742a14926f97631da09499d7d5b8223ee48fe82242c74c6"
+    },
+    {
+      "path": "data/atlas/m050.json",
+      "bytes": 66286,
+      "sha256": "39eac09e44da893966329a6cd03dc044b472c93e0d1d671bcf136388e6c6395a"
+    },
+    {
+      "path": "data/atlas/m051.json",
+      "bytes": 62172,
+      "sha256": "a0ad113c0d582abe5ec074798f0c52c238fcbf52267129c113a36aeb2ea48665"
+    },
+    {
+      "path": "data/atlas/m052.json",
+      "bytes": 82452,
+      "sha256": "759726255198766e270778427e98461c42285e4b0a4871fb85766f4a16dab9fa"
+    },
+    {
+      "path": "data/atlas/m053.json",
+      "bytes": 3965,
+      "sha256": "e1f9084ad99bf0c28f22b8673c48e30057d3447782a8736e6e15ab38613989cb"
+    },
+    {
+      "path": "data/atlas/m054.json",
+      "bytes": 7640,
+      "sha256": "4109293a181fde67a527970f24c032632a2ee5d509a7b0bfe332a70140743c05"
+    },
+    {
+      "path": "data/atlas/m055.json",
+      "bytes": 3960,
+      "sha256": "833e178a6293ed2be18c8f381fbb7ec680a4b1a59cddc1f81dbb2c4bfcaf1c88"
+    },
+    {
+      "path": "data/atlas/m056.json",
+      "bytes": 105952,
+      "sha256": "2a452aef0e44d18d4e1aaacb22f281d7aa7344bbe7ca106ecbfd7d3b88d4fb05"
+    },
+    {
+      "path": "data/atlas/m057.json",
+      "bytes": 1015148,
+      "sha256": "de9a503546294e0b914982dfa47d937384c446774a213e82bc02d337c1a99d4f"
+    },
+    {
+      "path": "data/atlas/m058.json",
+      "bytes": 44483,
+      "sha256": "467f428480a9d2f4d18e6797773b4b86bdb9d73ee3a23409d3681669ff7f415c"
+    },
+    {
+      "path": "data/atlas/m059.json",
+      "bytes": 3883,
+      "sha256": "cf0906a0de6e73fdf8c0df9d40e44349d6a1c7676b6976374db0c6e2be4058d9"
+    },
+    {
+      "path": "data/atlas/m060.json",
+      "bytes": 61981,
+      "sha256": "0e44a60e76078eb579439e9cd5b1c1d304daf009f945ee36e6f8db6f78b77f4f"
+    },
+    {
+      "path": "data/atlas/m061.json",
+      "bytes": 3558,
+      "sha256": "29439cac849563e3adad92c03e9b6ff5af6140634f35aa7cc2472bd8308cfea4"
+    },
+    {
+      "path": "data/atlas/m062.json",
+      "bytes": 23255,
+      "sha256": "15f933e3b946cb2611e3caacf2c8ad5c173a4aa32940f60f776c9e7181d77a7c"
+    },
+    {
+      "path": "data/atlas/m063.json",
+      "bytes": 78682,
+      "sha256": "e7124564e9b9ab036095a175272cbcedcf429f566e5946c6464d383ef9c12b68"
+    },
+    {
+      "path": "data/atlas/m064.json",
+      "bytes": 4206,
+      "sha256": "5cf3aa6bb6a68605eec3d1b667cd36054085f8cc79bb1d914de03019c96b9942"
+    },
+    {
+      "path": "data/atlas/m065.json",
+      "bytes": 6344,
+      "sha256": "cdecc1b8857da6193ccdce1fc980cd8981ae56e77207f408aa341d10310d66da"
+    },
+    {
+      "path": "data/atlas/m066.json",
+      "bytes": 4130,
+      "sha256": "e455de221e0abf40200aa3cf3684e08c445ec39e54cd477a7d820e15b800c3c8"
+    },
+    {
+      "path": "data/atlas/m067.json",
+      "bytes": 91815,
+      "sha256": "3dc68d508c01e2035665a3521ed04477e9c38ca51ac89d0e0adaa8fcb87640be"
+    },
+    {
+      "path": "data/atlas/m068.json",
+      "bytes": 4230,
+      "sha256": "72e224ff3fc16f695b2813c8919f230334ba95ea43af3a92f3063ddf1344b52c"
+    },
+    {
+      "path": "data/atlas/m069.json",
+      "bytes": 43697,
+      "sha256": "382d33a0a23e7af390e44c8fc4df66551b1d16376e25be7eedc972e5b65b1616"
+    },
+    {
+      "path": "data/atlas/m070.json",
+      "bytes": 119624,
+      "sha256": "1e2a55ad6b1c614d229fa675dcec7570b418396a6566e4dd1c67708aa4476008"
+    },
+    {
+      "path": "data/atlas/m071.json",
+      "bytes": 4861,
+      "sha256": "34a9af1671633954daf6fb48b45c09ac5a7352c4503c96841202677710d06c9b"
+    },
+    {
+      "path": "data/atlas/m072.json",
+      "bytes": 36933,
+      "sha256": "eec63e9761a0180ecb3f9a0cd80e683d25ba77a95b5b115c492d316e2770435d"
+    },
+    {
+      "path": "data/atlas/m073.json",
+      "bytes": 46706,
+      "sha256": "4d3a62cedc6681f29187c7314a3671ab5a33b2d39be6464c7d6ac4218eab439c"
+    },
+    {
+      "path": "data/atlas/m074.json",
+      "bytes": 53531,
+      "sha256": "fa50cf6cfad8b732b033a5836bce493997b094c6158941aadeafe4a4e785f35d"
+    },
+    {
+      "path": "data/atlas/m075.json",
+      "bytes": 4643,
+      "sha256": "e047817335d761e881561669fe4507186f53801dfe0b10097468cc2a3ac6d46b"
+    },
+    {
+      "path": "data/atlas/m076.json",
+      "bytes": 107907,
+      "sha256": "ac02e58aadf084b9ef56ea2eebf293b86bea39cb02296657c68f7423a36b1405"
+    },
+    {
+      "path": "data/atlas/m077.json",
+      "bytes": 86148,
+      "sha256": "afe91bf463c336cc31593fae27f2e762a5f73bf6e432b65b6289e42f04e98f0b"
+    },
+    {
+      "path": "data/atlas/m078.json",
+      "bytes": 83026,
+      "sha256": "1cb64ad0bedd2f7318edf5f1a40160554b799056d3751e3a0cf9a5af3baa61a6"
+    },
+    {
+      "path": "data/atlas/m079.json",
+      "bytes": 73476,
+      "sha256": "e4fbf3eec4c28039c7b4ee5954e4259e434623dc84532df793591bdc751428f1"
+    },
+    {
+      "path": "data/atlas/m080.json",
+      "bytes": 19767,
+      "sha256": "96fa0508f2289eae088a6642a45d21a5834e06a5f9bfc5875af8e64009052b3e"
+    },
+    {
+      "path": "data/atlas/m081.json",
+      "bytes": 67435,
+      "sha256": "5c82d1febdcfbb9e7a5c270a052220f212ccf55055a3cef2eab82540f75c2262"
+    },
+    {
+      "path": "data/atlas/m082.json",
+      "bytes": 48846,
+      "sha256": "a7d28ddd2ebca4e86651cb4b5f5fb5b0dc26cdc77a68253a4a2ac6f59f1a0ea7"
+    },
+    {
+      "path": "data/atlas/m083.json",
+      "bytes": 59748,
+      "sha256": "79cce9f71081f78f03e4a75efab876a19ee18cd59587e69ee2974454646533a8"
+    },
+    {
+      "path": "data/atlas/m084.json",
+      "bytes": 103180,
+      "sha256": "d3d7971890c9fc3f3184a3ab784b39c1bef5130fbedfe98e845d84c0ffe40fde"
+    },
+    {
+      "path": "data/atlas/m085.json",
+      "bytes": 383883,
+      "sha256": "e18a8bd4e23580aea1da9a5a2eae4f7fa75c8f124b0436c35e02e29376520bf8"
+    },
+    {
+      "path": "data/atlas/m086.json",
+      "bytes": 133309,
+      "sha256": "db9309c53dbdbd550bb2bc55058c2134fd8bd311642822a75e84d187aafe3925"
+    },
+    {
+      "path": "data/atlas/m087.json",
+      "bytes": 265169,
+      "sha256": "e178745f1c4bd8b1e543ac140b460b18c7912a7e18f8d9d470db74348a4f4979"
+    },
+    {
+      "path": "data/atlas/m088.json",
+      "bytes": 33099,
+      "sha256": "9b0406abdec110538cff65d25f4ca492656eb8ffe8a75a4ac72228143f629124"
+    },
+    {
+      "path": "data/atlas/m089.json",
+      "bytes": 141795,
+      "sha256": "9aea05ca93b8c62ede11904821f4bb101e4f3e2775d4a77ad3f622ee26657efe"
+    },
+    {
+      "path": "data/atlas/m090.json",
+      "bytes": 4125,
+      "sha256": "c98f2cd5d87688c6d364468b70ec0ddab6c8038c62be1207ad129dce955abeb3"
+    },
+    {
+      "path": "data/atlas/m091.json",
+      "bytes": 100098,
+      "sha256": "5aa315a7bb5187501ddb924e8f975991c844055de2d3d5ccc01928495444b908"
+    },
+    {
+      "path": "data/atlas/m092.json",
+      "bytes": 4440,
+      "sha256": "7f4ff10f69f5f5780cb155d5ceabbdcced44d3b2cf7b236f196208fceb749e9a"
+    },
+    {
+      "path": "data/atlas/m093.json",
+      "bytes": 4096,
+      "sha256": "de46b266f3cc9d706e2635ccb7be6899081c23c2c573698b8952094c3439d492"
+    },
+    {
+      "path": "data/atlas/m094.json",
+      "bytes": 3682,
+      "sha256": "d70a18a9b935ab61118dde9f96701b8845e63d5a66f2f69cdc1d24fd3f23328c"
+    },
+    {
+      "path": "data/atlas/m095.json",
+      "bytes": 43564,
+      "sha256": "38f35361b2f372631333a9d8ed2e231435fb41cc3cf9d2141a59fe1a27274887"
+    },
+    {
+      "path": "data/atlas/m096.json",
+      "bytes": 4027,
+      "sha256": "81edc150b3ab337cf31dae6c36319f06ae78b145afe1e634d04ac81b0666d4b9"
+    },
+    {
+      "path": "data/atlas/m097.json",
+      "bytes": 69195,
+      "sha256": "161847e2116eaea00140393362d05b1f183e4c8fd2a01796887ea733b5fe0c38"
+    },
+    {
+      "path": "data/atlas/m098.json",
+      "bytes": 584519,
+      "sha256": "fc490eb2f8d03c93654fed2a4e32e0cef3dbe4df053aaea34f0502e1ecee3607"
+    },
+    {
+      "path": "data/atlas/m099.json",
+      "bytes": 137999,
+      "sha256": "d444b59cb15e6595e79e1190a9e0b747f0b348c7805642f182edc7bcbac73615"
+    },
+    {
+      "path": "data/atlas/m100.json",
+      "bytes": 4462,
+      "sha256": "6dc11e35e8009208aacf74eebb47841f37472e5c03cab99bb5ab75404c4c859a"
+    },
+    {
+      "path": "data/atlas/m101.json",
+      "bytes": 89478,
+      "sha256": "eabbd9fd88122fb367e2b8ac84adf4f6ceaa9904072ad277d2907b7aad539d62"
+    },
+    {
+      "path": "data/atlas/m102.json",
+      "bytes": 110270,
+      "sha256": "ca94a9a16c5c695ae490bcf357f12f32edb6c8af1983b0a04d95a9a5363eccdc"
+    },
+    {
+      "path": "data/atlas/m103.json",
+      "bytes": 187067,
+      "sha256": "fe27e0856a7c0ba3dc12396ab194ca4d0a67321a3eaf7904a4d3734ad89e82a5"
+    },
+    {
+      "path": "data/atlas/m104.json",
+      "bytes": 3346,
+      "sha256": "61a92c91148fde3bdce35a60066916008caee55baa04b367e6cfe37e48d8d829"
+    },
+    {
+      "path": "data/atlas/m105.json",
+      "bytes": 3788,
+      "sha256": "1e796e6d4e11fe9d7bbf2de3f16add67e3de26a5d7a8a734fff7c95048349b88"
+    },
+    {
+      "path": "data/atlas/m106.json",
+      "bytes": 3772,
+      "sha256": "140ed66dd9440fb05053a29b264beff90ef42a9fab901332bc7fd5bd66cb6288"
+    },
+    {
+      "path": "data/atlas/m107.json",
+      "bytes": 70236,
+      "sha256": "8a356d081fdb18eaa5a92de7fb17aca2ddd61cf140940916ba771dc3caf33e43"
+    },
+    {
+      "path": "data/atlas/m108.json",
+      "bytes": 37806,
+      "sha256": "5bbf5f5d9fe84fa7fed57998e2aab504eff1a7fa3b99f44ee3f72c6fe9a4c145"
+    },
+    {
+      "path": "data/atlas/m109.json",
+      "bytes": 83318,
+      "sha256": "4d3d200e711b5f84260c83e2abfc6acd35a51767b8505d96338ac85dad028a88"
+    },
+    {
+      "path": "data/atlas/m110.json",
+      "bytes": 52534,
+      "sha256": "a37db22599cdb0c11eefc7f17b906a89523a96e4825da3e6c5ba19cb0bfd592e"
+    },
+    {
+      "path": "data/atlas/m111.json",
+      "bytes": 28536,
+      "sha256": "f15c9e847ffcb9d81568bc72b40044d28a2c347b344a119c3086fa1487eb6193"
+    },
+    {
+      "path": "data/atlas/m112.json",
+      "bytes": 4414,
+      "sha256": "6d67e8071c5120809823787c3dd06efe5ccdfbc0109649172ddb69f068b4948c"
+    },
+    {
+      "path": "data/atlas/m113.json",
+      "bytes": 4111,
+      "sha256": "855d03203dbedc4381435d6eed6634e22336672eeb8dcbd2c870c18a3e6e48d3"
+    },
+    {
+      "path": "data/atlas/m114.json",
+      "bytes": 32485,
+      "sha256": "b176af7de9a07d3c01dabc33bcd749f1fdc335cad0ec4fc5f077ebcb9d97d051"
+    },
+    {
+      "path": "data/atlas/m115.json",
+      "bytes": 163435,
+      "sha256": "8b5a6e66c442c16eda116e7f180cf585f28b54c22397737495ef7bba5ccbdb03"
+    },
+    {
+      "path": "data/atlas/m116.json",
+      "bytes": 4043,
+      "sha256": "ad25103ad94550f77962cd420a781e2a53a3ffd83dd9373ed6728214be76896d"
+    },
+    {
+      "path": "data/atlas/m117.json",
+      "bytes": 5408,
+      "sha256": "930f8b3d22db9b0821f661daa9e1afab7c37b3f774bd950ace60d378c898bc1d"
+    },
+    {
+      "path": "data/atlas/m118.json",
+      "bytes": 5530,
+      "sha256": "39d4a006a7dc6689e6a21be6ff5ba92b932c0b619c3f066b67b1f531057fa430"
+    },
+    {
+      "path": "data/atlas/m119.json",
+      "bytes": 15186,
+      "sha256": "1a179a2687e69828ef666c8ea03e8316b5e0f12bb3b40f0070774a2cd4253fe4"
+    },
+    {
+      "path": "data/atlas/m120.json",
+      "bytes": 101271,
+      "sha256": "c89cc5b55f0d7a4f597bb375f627b38358897f99bb44bb935a6d3f7e11a4ee0d"
+    },
+    {
+      "path": "data/atlas/m121.json",
+      "bytes": 3696,
+      "sha256": "1c3d59441c3adf1eec9a0e2c054ed0de42ffecabf89f532f0d462c2d342304c2"
+    },
+    {
+      "path": "data/atlas/m122.json",
+      "bytes": 358188,
+      "sha256": "df8e9e5104f5fc26e09666814c828c9119dfabcb11ee0946c1931ce029be9ffa"
+    },
+    {
+      "path": "data/atlas/m123.json",
+      "bytes": 4338,
+      "sha256": "6c3791166d2333172883adf7a41071d23b2242a7be4b6afa75bcad73e58edcf9"
+    },
+    {
+      "path": "data/atlas/m124.json",
+      "bytes": 21013,
+      "sha256": "408791f1492d4cb3b1bfd4e0795ba129b21ccdeaa84fd4c5b0e8e2fb541f12fb"
+    },
+    {
+      "path": "data/atlas/m125.json",
+      "bytes": 89278,
+      "sha256": "ff2640e4ac2a6955c651bc783ec30c513e2495d494aef569ec74aa7df21cbb91"
+    },
+    {
+      "path": "data/atlas/m126.json",
+      "bytes": 3727,
+      "sha256": "bf8c99dd9bd265edd1c23d7d13448963a61c7162491443eeb9ae54aa68ec085a"
+    },
+    {
+      "path": "data/atlas/m127.json",
+      "bytes": 24560,
+      "sha256": "71ba2e241cbd193eabf17a1620ff1054bd96a213e1ed6b2a75403448f24dd93e"
+    },
+    {
+      "path": "data/atlas/m128.json",
+      "bytes": 168826,
+      "sha256": "a84a7e4936bcd9c0b8cb4c5fc68ab17fb2e04d707d903729fb79526a8125ad45"
+    },
+    {
+      "path": "data/atlas/m129.json",
+      "bytes": 135674,
+      "sha256": "2975eab1deb3ca15bd924e7e9b22eeb05a374d556e97d2e3606b593d6ffce865"
+    },
+    {
+      "path": "data/atlas/m130.json",
+      "bytes": 17796,
+      "sha256": "49eb59c8fdc0006e3bbb589fb2fad38dd3aaba6b83d5fcb7609f1e83f2d52b26"
+    },
+    {
+      "path": "data/atlas_index.json",
+      "bytes": 4903,
+      "sha256": "20de0dbac449b98f43c5d1c61512b05cc4da899499162b8595f8043bf8f348aa"
+    },
+    {
+      "path": "data/display_policy.json",
+      "bytes": 9460,
+      "sha256": "868b9e6f0af39fee345538df0959cf091474db43935c4e136f2f68c45d90a8d3"
     },
     {
       "path": "data/interactive_extra.json",
@@ -51,8 +722,8 @@
     },
     {
       "path": "design-notes.html",
-      "bytes": 4514,
-      "sha256": "0ea235f28dd830a2a57f9217776ca796d5a1acf46c3f7882c1022bdf6adce198"
+      "bytes": 4516,
+      "sha256": "673828cff71ab4ed21f476d42c7a1c92873a193551daa4d73ac7edc076f55816"
     },
     {
       "path": "downloads/C_T20_base_primary_windows.csv",
@@ -181,8 +852,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 9429,
-      "sha256": "57e4144b0848077aef7b11edb2d2142a20a2a7f080bb47be2d1dc13c4af690d2"
+      "bytes": 7266,
+      "sha256": "1d95581089af67890499dfc1aaa2977910b0dbb55d5e5b565809394fd62142ec"
     },
     {
       "path": "README.md",
@@ -191,8 +862,23 @@
     },
     {
       "path": "style.css",
-      "bytes": 28474,
-      "sha256": "1405bb337b52f9e494fcae16312b9f1549e963c4fb91e3d7ceaae635b6b4472c"
+      "bytes": 10256,
+      "sha256": "a2862cd01128bc01fe888ec267c340990b920cc3da31d790ce3ffa969b088d7d"
+    },
+    {
+      "path": "vendor/leaflet/leaflet.css",
+      "bytes": 14145,
+      "sha256": "337bfca5cabd03b39815b2700febe2b3b7edf55921c59cd49f88ecb328212303"
+    },
+    {
+      "path": "vendor/leaflet/leaflet.js",
+      "bytes": 147552,
+      "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+    },
+    {
+      "path": "vendor/leaflet/LICENSE.txt",
+      "bytes": 1369,
+      "sha256": "bbc959aaef7488b38942e7f05cfd1244351f8bce54261951ea17dd7cf60f894b"
     }
   ]
 }
