@@ -1,5 +1,8 @@
 {
-  "version": "results-2026-10-27",
+  "version": "presentation-2026-10-27-v2",
+  "scientific_data_version": "results-2026-10-27",
+  "hash_scope": "committed web payload bytes, after existing Git newline normalization; manifest itself excluded",
+  "scientific_experiments_added": 0,
   "files": [
     {
       "path": ".nojekyll",
@@ -8,8 +11,18 @@
     },
     {
       "path": "app.js",
-      "bytes": 8844,
-      "sha256": "8ee3bd5c6f66a04dd35d8536274745fe24e1def560303f181fb168594ca8d8b8"
+      "bytes": 15809,
+      "sha256": "3a422f7b6df79d4b418a2f7d959737c50400d83457060d9758fa877038a9ce95"
+    },
+    {
+      "path": "applications.html",
+      "bytes": 10463,
+      "sha256": "4355c9c77bfbe95a7f67abcd535deee5044eb08ce53bac84e783dc3750eda131"
+    },
+    {
+      "path": "data/mountain_systems.json",
+      "bytes": 668,
+      "sha256": "724da6ba60671d076e762c66c6315bc012141565f4211159d9b7edd30e10ae97"
     },
     {
       "path": "data/results.json",
@@ -17,34 +30,44 @@
       "sha256": "b982cf7a50d26ba3d8151c94a7ff3f33dc1e4bc2a6a97ff76fd6159c9fde4964"
     },
     {
+      "path": "design-notes.html",
+      "bytes": 4395,
+      "sha256": "6264e6d192ae8c7d097399a27afe11cecf0273ed9f1dc2314d45e99083196a94"
+    },
+    {
       "path": "downloads/C_T20_base_primary_windows.csv",
-      "bytes": 320002,
-      "sha256": "25cbfc3edd5bef593870a159cfe5c66310c52a4dbdd9a0f240cdf0c1867a93f5"
+      "bytes": 317809,
+      "sha256": "077718c8d6942555bd50d6c37751e1a02f60f43cac5f552edb58c15237949a26"
     },
     {
       "path": "downloads/CB_T20_base_primary_windows.csv",
-      "bytes": 320017,
-      "sha256": "6a82af61c786ffaf8337fc8165a879fbf1db7106382427b01bbda291ec77441a"
+      "bytes": 317824,
+      "sha256": "ba61f012a3f83ea0526ed0a55ac3f6d4ac36c22662d5d28cd7f56c79bc9dddb6"
     },
     {
       "path": "downloads/county_raw_name_province_summary.csv",
-      "bytes": 6633,
-      "sha256": "4abf323dba5779c3caaa97d52598b26339a352c44526cd5a859c224e069791f4"
+      "bytes": 6600,
+      "sha256": "1a2c032f53a7728d97cc2df2047a5028619eb2b9108942fc60dcf938375d81d6"
+    },
+    {
+      "path": "downloads/hengduan_members_comparison.csv",
+      "bytes": 1767,
+      "sha256": "016d0dac5cf866435464541c0563fb928d6f733bc5ac9a03710fe8c590d763a8"
     },
     {
       "path": "downloads/N0_descriptive_background.csv",
-      "bytes": 33558,
-      "sha256": "c617d6f5f2249e04954d1c37d9d8c6c9d9d6bfcf8e6fc5ac27fc4bbd0e6507d9"
+      "bytes": 33295,
+      "sha256": "c89b121e2108b200a8cd7995cc33e754cf3a24c71ef7f2586229afe63c9781e3"
     },
     {
       "path": "downloads/N1_frozen_pool_thresholds.csv",
-      "bytes": 1153,
-      "sha256": "5a2e27bc24746315dd2a4546a78aa65b91761fd930327b87e47d3df9bfb209b5"
+      "bytes": 1144,
+      "sha256": "abbcd3684645d6c325af6a409874e049d3ce1a4814b83aebe67caa885b7cc605"
     },
     {
       "path": "downloads/primary_mountain_results.csv",
-      "bytes": 25385,
-      "sha256": "53eddb250bdcec3702f3f196d83d782d8555c26f7ff5b13858506c338ab1d9ce"
+      "bytes": 25122,
+      "sha256": "bf8d083cdd72bfa0c33015fea22267143622f8b62336adec8f649f88f02372f1"
     },
     {
       "path": "downloads/research-directions-20261027.pdf",
@@ -58,18 +81,23 @@
     },
     {
       "path": "downloads/seed_stability_summary.csv",
-      "bytes": 960,
-      "sha256": "3283645531ab1fd4c47e90ce99f11506d5654de8bea1aae95adef042fa78be18"
+      "bytes": 957,
+      "sha256": "94d14c0d351e6f7756dbfb03ef7fcecd89c95bddd0ebeac0bcd4149b055fd099"
     },
     {
       "path": "downloads/source_threshold_sensitivity.csv",
-      "bytes": 1591,
-      "sha256": "e3fd673505d2a1b4090959e820a71834933ef97e1da89821a1e6dafdd5a7ee2b"
+      "bytes": 1580,
+      "sha256": "433c5f8d0bbe11784f178e0a983818c8382348203195a9cc6168c04637d10368"
+    },
+    {
+      "path": "downloads/界面与应用更新说明_20261027_v2.md",
+      "bytes": 4555,
+      "sha256": "1400b7c67b80d79753ef572a00b691a44e38d67519635dac29bf842978507cec"
     },
     {
       "path": "downloads/阶段成果说明.md",
-      "bytes": 1323,
-      "sha256": "8a1acce75906e088b1689c584430b2d74675b60fcac208c0dc4b0945b09db79f"
+      "bytes": 1310,
+      "sha256": "80c72557b17e3828094a1114869723b5a8f2e368b5f142a2ecc3358cf706b5fa"
     },
     {
       "path": "figures/01_support_coverage.pdf",
@@ -83,8 +111,8 @@
     },
     {
       "path": "figures/01_support_coverage.svg",
-      "bytes": 25357,
-      "sha256": "e17e522b5cdf291cf0b9e7410815abdcd457b699e47930b25cbc9bac54bffbdc"
+      "bytes": 24813,
+      "sha256": "44f089ba67209c009a6247c9727792ec3bcfb82d80997954f3bf2507f5d9b8dd"
     },
     {
       "path": "figures/02_N1_thresholds.pdf",
@@ -98,8 +126,8 @@
     },
     {
       "path": "figures/02_N1_thresholds.svg",
-      "bytes": 13908,
-      "sha256": "851975f6fac120f6a24cc9104009e2581c6162b38bcf2834d1b35dd57c129cf4"
+      "bytes": 13586,
+      "sha256": "e805caf2631dc8ad7bac0fa7e783697cf042a5f761e3222846ff4ef596c07f96"
     },
     {
       "path": "figures/03_seed_diagnostics.pdf",
@@ -113,8 +141,8 @@
     },
     {
       "path": "figures/03_seed_diagnostics.svg",
-      "bytes": 137942,
-      "sha256": "dc29c1f4051c013819e2bbecc3d31bb58fe55e1fcd1461bd77559bb9724799bd"
+      "bytes": 136304,
+      "sha256": "436abe09d5571d89ade19098a4c8fd72a18618b00d4bbcf3ffb708d1c5925ec7"
     },
     {
       "path": "figures/04_county_units.pdf",
@@ -128,24 +156,23 @@
     },
     {
       "path": "figures/04_county_units.svg",
-      "bytes": 50678,
-      "sha256": "49779a48b3b87ceaf1c60b277b865af912771c78c3c360892336155803e781ea"
+      "bytes": 49271,
+      "sha256": "02dab89c237297428561a63754cc920bb505466143f2560ffb0a1bc8ca1506a6"
     },
     {
       "path": "index.html",
-      "bytes": 11258,
-      "sha256": "62393f9e4a250c71275247cd6258bda60fadadd918f7673ee3bc6d14ef7f0746"
+      "bytes": 16087,
+      "sha256": "334885a7f4bfa29e694cf87697f0912721ac93f27583f9e588d94daf353d43dd"
     },
     {
       "path": "README.md",
-      "bytes": 1323,
-      "sha256": "8a1acce75906e088b1689c584430b2d74675b60fcac208c0dc4b0945b09db79f"
+      "bytes": 1310,
+      "sha256": "80c72557b17e3828094a1114869723b5a8f2e368b5f142a2ecc3358cf706b5fa"
     },
     {
       "path": "style.css",
-      "bytes": 11574,
-      "sha256": "1f83ae1df3e2b001b66956063ae079b0c5edf24e16613119b30b6d82e176c77b"
+      "bytes": 22967,
+      "sha256": "60c5c8deb8382c2e7dc1994121c7ad1d49533b82d20cc74fa47edf7b14580f60"
     }
-  ],
-  "research_implementation_included": false
+  ]
 }

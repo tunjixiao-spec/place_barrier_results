@@ -2,6 +2,12 @@
 
 [打开最新成果展示](https://tunjixiao-spec.github.io/place_barrier_results/)
 
+[实际应用意义与使用流程](https://tunjixiao-spec.github.io/place_barrier_results/applications.html) · [界面参考和技能记录](https://tunjixiao-spec.github.io/place_barrier_results/design-notes.html)
+
+本轮界面更新完整保留131对象、144路径与全部NA对象；提供地图定位、缩放、名称筛选、逐窗未合格原因及可分享查询网址。横断山系沿用旧工程9成员分组用于并列导航，另保留单条“横断山”；新版尚无山系合成JSD。应用页区分当前可辅助的调查/资料对照/教学与补证后的应用设想，不声称已有应用效果测量。
+
+浏览器必需的展示源码在web/，可直接用静态HTTP服务预览；不需要构建或外部地图令牌。研究计算源码继续本地保留。本轮未新增科学实验，已有科学数表、图件和报告保持原始本地SHA-256。验证与限制见web/downloads/界面与应用更新说明_20261027_v2.md。
+
 # 2026年10月27日阶段成果
 
 主线已更新为safe C/B/CB、CLQ、Leiden与02j组成JSD。主候选C_N047、CB_N047并列，A_nonisolated+exclude，每侧30唯一有效来源，窗长100km、侧宽50km、步长20km。
