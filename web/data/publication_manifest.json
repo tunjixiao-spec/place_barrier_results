@@ -1,5 +1,5 @@
 {
-  "version": "two-sided-atlas-2026-10-28-v5",
+  "version": "two-sided-atlas-2026-10-28-v6",
   "scientific_data_version": "frozen 02j/E02/stage3 and stage5 diagnostics",
   "hash_scope": "committed web payload bytes after Git newline normalization; manifest excluded",
   "new_statistical_experiments": 0,
@@ -12,18 +12,18 @@
     },
     {
       "path": "app.js",
-      "bytes": 27194,
-      "sha256": "bb1770534ab0e94cdf1a8542ea2b1dcf9a7f0ed61bbe0b1aec81ab390947c566"
+      "bytes": 27673,
+      "sha256": "7c540efcaed2e7cabde519ad4d5c47d9a4b1087fcdbc4e8b40898e0c8c793f09"
     },
     {
       "path": "applications.html",
-      "bytes": 10199,
-      "sha256": "94ef0fbf0138b55f1f50e29b5f7d9af7012a08c2573ccc8d8d110bf68f39013b"
+      "bytes": 10083,
+      "sha256": "5da2be252961e63a4001231c4b5aae1bdaa954adf4f37341df4e4c7ebb8cbcb4"
     },
     {
       "path": "article.css",
-      "bytes": 28474,
-      "sha256": "1405bb337b52f9e494fcae16312b9f1549e963c4fb91e3d7ceaae635b6b4472c"
+      "bytes": 4460,
+      "sha256": "92312469622d156e44736115de0c8cbc94efb422069d80dde2ebfb38981403ef"
     },
     {
       "path": "data/atlas/m000.json",
@@ -852,8 +852,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7266,
-      "sha256": "1d95581089af67890499dfc1aaa2977910b0dbb55d5e5b565809394fd62142ec"
+      "bytes": 9275,
+      "sha256": "637aa1026ea1563290967c53a7fd6a5e6ac94176fc836e574857cdd24848d314"
     },
     {
       "path": "README.md",
@@ -862,8 +862,8 @@
     },
     {
       "path": "style.css",
-      "bytes": 10256,
-      "sha256": "a2862cd01128bc01fe888ec267c340990b920cc3da31d790ce3ffa969b088d7d"
+      "bytes": 14763,
+      "sha256": "285550d0e0abf1b5cfea9c0d8e7b3ae8c554516cb33658262752c71a920ec345"
     },
     {
       "path": "vendor/leaflet/leaflet.css",

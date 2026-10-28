@@ -1,13 +1,72 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><meta name="description" content="按山脉和窗口对照两侧地名社区、真实特征字命中率及组成差异。"><title>山脉两侧 · 地名社区对照</title><link rel="stylesheet" href="vendor/leaflet/leaflet.css"><link rel="stylesheet" href="style.css?v=20261027e"></head><body><a class="skip" href="#main">跳到内容</a>
-<header><div><h1>山脉两侧 <span>地名社区对照</span></h1><p>社区分布、特征字与组成差异</p></div><nav><a href="applications.html">应用意义</a><a href="#method">说明</a></nav></header>
-<main id="main"><section class="controls" aria-label="查询筛选"><label>网络<select id="candidate"><option value="C_T20_base">C · 单字社区</option><option value="CB_T20_base">CB · 单字与双字社区</option><option value="B_T20_base">B · 双字社区（机制对照）</option></select></label><label>搜索山脉<input id="mountain" list="mountain-options" autocomplete="off" placeholder="输入名称…" value="秦岭"><datalist id="mountain-options"></datalist></label><label>选择山脉 / 山系<select id="mountain-select"></select></label><label class="window-control">沿线窗口<select id="window-select"></select></label><button id="reset-view" class="primary">定位当前窗口</button><span id="load-state" role="status" aria-live="polite">正在载入…</span></section>
-<div class="system-shortcuts" id="system-shortcuts"></div><section class="metrics" id="metrics" aria-live="polite"></section>
-<section id="system-view" hidden><div class="panel-title"><h2 id="system-title"></h2><span>成员分别查看，不合成JSD</span></div><div id="system-map"></div><div id="system-members" class="member-pills"></div><svg id="system-chart" viewBox="0 0 1100 450" role="group" aria-label="点击成员查看结果"></svg><details><summary>分组依据与未匹配名称</summary><div id="system-source"></div></details></section>
-<section id="side-workbench"><div class="view-controls"><div class="segmented" role="group" aria-label="地图内容"><button id="mode-community" class="active" aria-pressed="true">社区分布</button><button id="mode-feature" aria-pressed="false">特征字分布</button></div><label>社区<select id="community-filter"><option value="">全部社区</option></select></label><label>特征字<select id="feature-filter"></select></label><label class="check"><input type="checkbox" id="basemap" checked> 地理底图</label><button id="expand-maps">展开地图</button></div>
-<div class="maps" id="maps"><article class="map-panel"><div class="panel-title"><h2 id="side-A-title">A侧</h2><span id="side-A-info"></span></div><div id="map-A" class="geo-map" role="region" aria-label="A侧社区与特征字聚合分布"></div></article><article class="map-panel"><div class="panel-title"><h2 id="side-B-title">B侧</h2><span id="side-B-info"></span></div><div id="map-B" class="geo-map" role="region" aria-label="B侧社区与特征字聚合分布"></div></article></div>
-<div class="legend" id="legend"></div><div class="map-footnote"><span id="display-note">圆点为20km格网汇总，至少5条来源；不是村庄点位。</span><span>双图同步缩放 · A/B按参考路径方向定义</span></div>
-<div class="comparisons"><section class="panel"><div class="panel-title"><h2>两侧社区组成</h2><span id="community-count"></span></div><div class="composition-head"><span>社区</span><span>A侧</span><span>B侧</span><span>差异贡献</span></div><div id="community-bars"></div><p class="note">比例按来源内等分质量计算；各侧加和100%。</p></section><section class="panel"><div class="panel-title"><h2>当前范围的特征字</h2><span>点击字词定位</span></div><div class="table-scroll"><table><thead><tr><th>特征</th><th>A侧命中</th><th>B侧命中</th><th>百分点差</th></tr></thead><tbody id="feature-table"></tbody></table></div><p class="note">按该窗口实际来源命中数排序；一条来源可含多个特征，命中率不要求加和100%。</p></section></div>
-<section class="panel explanation"><div class="panel-title"><h2>怎么判断这些差异</h2><span id="judgment-short"></span></div><div id="interpretation"></div><details><summary>查看分档标准与判读条件</summary><div id="criteria"></div></details></section>
-<section class="panel"><div class="panel-title"><h2>沿山脉切换窗口</h2><span>点击曲线点切换双图</span></div><svg id="profile" viewBox="0 0 1100 170" role="group" aria-label="沿线可靠窗口JSD，点击切换窗口"></svg><p id="profile-note" class="note"></p></section></section>
-<details id="network" class="panel"><summary id="network-heading">查看当前CLQ网络</summary><div id="network-stats" class="metrics"></div><div class="view-controls"><label>社区<select id="network-group"></select></label><label class="check"><input type="checkbox" id="network-isolates"> 显示孤立特征</label><span id="network-state" role="status"></span></div><canvas id="network-canvas" aria-label="特征网络，社区表提供成员查询"></canvas><p id="network-selection" class="note"></p><div class="table-scroll"><table><thead><tr><th>社区</th><th>特征数</th><th>全网成员示例</th></tr></thead><tbody id="network-community-table"></tbody></table></div><p class="note">网络按社区分组排布，位置不是地理坐标；此处全网成员示例不用于代替上方窗口实测特征。</p></details>
-<details id="method" class="panel"><summary>数据与方法说明</summary><p>C / CB为主候选，B为机制对照。主尺度窗长100km、每侧50km、步长20km；每侧至少30条有效唯一来源。JSD以2为底，不取根，不合格为NA。不同网络的维度、来源支持不同，不直接按JSD排名优劣。</p><p>双图仅显示当前可靠窗口的来源聚合。20km格网与至少5来源是公开展示规则，不参与JSD计算；未单列格网的来源仍进入精确比例和特征表。圆点在格网中心，弹窗可查看格网范围及组成。</p><p>社区图以格网主要社区着色，弹窗保留混合组成；选中特征时，两侧统一用来源命中率0—100%着色。代表字均来自当前窗口，不能仅凭字形推断词源、语言或文化身份。</p><p>相对分档复用02j已完成的Fisher-Jenks四档，仅在同网络可靠山脉中比较；不是文化屏障标准。N0是有限全国背景，未代替条件基准或正式显著性检验。语义、独立方言和全国地形证据仍未闭环。</p><p>特征表选取各侧高频、侧间差异较大及各社区的实际命中特征，不是全部特征清单。格网内命中特征也仅在这份筛选表范围内排序。底图为外部地图服务，加载失败时研究线与聚合数据仍可显示。空间格网来源于冻结数据，不公开原始村级坐标和来源标识。</p><p><a href="applications.html">实际应用意义</a></p></details><footer>地名社区与山脉两侧组成差异 · 2026.10.28</footer></main><script src="vendor/leaflet/leaflet.js"></script><script src="app.js?v=20261027e"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eef3f8">
+<meta name="description" content="查询山脉两侧的地名社区组成、窗口JSD、实际特征字及当前证据范围。">
+<title>地名文化社区与山脉两侧组成差异成果展示</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css?v=20261028-v6">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+<div class="page-shell">
+<header class="page-header">
+<div><h1>地名文化社区与山脉两侧组成差异成果展示</h1><p class="subtitle">查询山脉两侧的地名社区分布、实际特征字与移动窗口 JSD，结合来源支持和覆盖范围理解组成差异。</p></div>
+<div class="header-actions"><div class="hero-badges"><span>C / CB 主候选</span><span>B 机制对照</span><span>两侧组成差异</span></div><nav aria-label="页面导航"><a href="#explore">山脉查询</a><a href="applications.html">应用意义</a><a href="#method">数据与方法</a></nav></div>
+</header>
+<main id="main">
+<section id="explore" class="panel control-panel" aria-labelledby="query-heading">
+<div class="panel-title-row"><h2 id="query-heading">山脉查询</h2><button id="query-button" class="primary-button" disabled>查询山脉</button></div>
+<div class="control-grid">
+<label class="control-item"><span>特征网络</span><select id="candidate"><option value="C_T20_base">C · 单字社区</option><option value="CB_T20_base">CB · 单字与双字社区</option><option value="B_T20_base">B · 双字社区（机制对照）</option></select></label>
+<label class="control-item"><span>手动输入山脉名称</span><input id="mountain" list="mountain-options" autocomplete="off" placeholder="例如：秦岭、横断山系、武夷山" value="秦岭"><datalist id="mountain-options"></datalist></label>
+<label class="control-item"><span>或从列表选择</span><select id="mountain-select"></select></label>
+<label class="control-item"><span>沿线窗口</span><select id="window-select"></select></label>
+</div>
+<div id="load-state" class="status-line" role="status" aria-live="polite">正在读取成果数据……</div>
+<div class="system-shortcuts" id="system-shortcuts" aria-label="复合山系快捷查询"></div>
+</section>
+<section class="panel metric-panel" aria-labelledby="metric-heading">
+<h2 id="metric-heading">山脉与窗口核心指标</h2><div class="metric-grid" id="metrics" aria-live="polite"></div>
+<div class="metric-reading-guide"><strong>指标阅读说明</strong><p>山脉汇总 JSD 描述可靠覆盖范围内的两侧组成差异；相对分档只在同一网络内比较。请结合可靠窗口和线长覆盖阅读，不能仅凭高值认定文化分隔作用。</p></div>
+</section>
+<section id="system-view" class="panel" hidden>
+<div class="panel-title"><h2 id="system-title"></h2><span>分别查看成员，不合成山系 JSD</span></div><div id="system-map" class="map-box"></div><div id="system-members" class="member-pills"></div><div class="chart-scroll"><svg id="system-chart" viewBox="0 0 1100 450" role="group" aria-label="点击山系成员查看结果"></svg></div><details><summary>分组依据与未匹配名称</summary><div id="system-source"></div></details>
+</section>
+<section id="side-workbench">
+<section class="panel map-workspace" aria-labelledby="map-heading">
+<div class="panel-title-row"><h2 id="map-heading">山脉两侧社区分布</h2><span class="panel-meta">A / B 双图同步缩放</span></div>
+<div class="view-controls">
+<div class="segmented" role="group" aria-label="地图内容"><button id="mode-community" class="active" aria-pressed="true">社区分布</button><button id="mode-feature" aria-pressed="false">特征字分布</button></div>
+<label>社区<select id="community-filter"><option value="">全部社区</option></select></label><label>特征字<select id="feature-filter"></select></label>
+<label class="check"><input type="checkbox" id="basemap" checked>地理底图</label><div class="map-actions"><button id="reset-view">定位当前窗口</button><button id="expand-maps">展开地图</button></div>
+</div>
+<div class="maps" id="maps">
+<button id="close-maps" class="close-maps" aria-label="收起展开的双侧地图">收起地图</button>
+<article class="map-panel"><div class="panel-title"><h3 id="side-A-title">A侧</h3><span id="side-A-info"></span></div><div id="map-A" class="geo-map" role="region" aria-label="A侧社区与特征字聚合分布"></div></article>
+<article class="map-panel"><div class="panel-title"><h3 id="side-B-title">B侧</h3><span id="side-B-info"></span></div><div id="map-B" class="geo-map" role="region" aria-label="B侧社区与特征字聚合分布"></div></article>
+</div>
+<div class="legend-box"><div class="legend-title">当前地图图例 · 点击社区可筛选</div><div class="legend" id="legend"></div></div>
+<div class="map-footnote"><span id="display-note">圆点为20km格网汇总，至少5条有效来源；不是村庄点位。</span><span>A/B 按参考路径方向定义</span></div>
+</section>
+<div class="comparisons">
+<section class="panel"><div class="panel-title"><h2>两侧社区组成</h2><span id="community-count"></span></div><div class="composition-head"><span>社区</span><span>A侧</span><span>B侧</span><span>差异贡献</span></div><div id="community-bars"></div><p class="note">比例按来源内等分质量计算；各侧加和100%。</p></section>
+<section class="panel"><div class="panel-title"><h2>当前范围的特征字</h2><span>点击字词定位</span></div><div class="table-scroll"><table><thead><tr><th>特征</th><th>A侧命中</th><th>B侧命中</th><th>百分点差</th></tr></thead><tbody id="feature-table"></tbody></table></div><p class="note">按当前范围实际来源命中数排序；一条来源可含多个特征，命中率不要求加和100%。</p></section>
+</div>
+<section class="panel explanation"><div class="panel-title"><h2>结果自动解释</h2><span id="judgment-short"></span></div><div id="interpretation" class="interpretation-text"></div><details class="explanation-rule"><summary>查看分档标准与判读条件</summary><div id="criteria"></div></details></section>
+<section class="panel profile-panel"><div class="panel-title"><h2>沿线窗口 JSD</h2><span>点击曲线点切换双侧地图</span></div><div class="chart-scroll"><svg id="profile" viewBox="0 0 1100 170" role="group" aria-label="沿线可靠窗口JSD，点击切换窗口"></svg></div><p id="profile-note" class="note"></p></section>
+</section>
+<details id="network" class="panel"><summary id="network-heading">查看当前CLQ网络</summary><div id="network-stats" class="network-metrics"></div><div class="view-controls"><label>社区<select id="network-group"></select></label><label class="check"><input type="checkbox" id="network-isolates">显示孤立特征</label><span id="network-state" role="status"></span></div><canvas id="network-canvas" aria-label="特征网络，社区表提供成员查询"></canvas><p id="network-selection" class="note"></p><div class="table-scroll"><table><thead><tr><th>社区</th><th>特征数</th><th>全网成员示例</th></tr></thead><tbody id="network-community-table"></tbody></table></div><p class="note">网络按社区分组排布，位置不是地理坐标；此处全网成员示例不代替窗口实测特征。</p></details>
+<details id="method" class="panel"><summary>数据与方法说明</summary><div class="method-content">
+<p>C / CB为主候选，B为机制对照。主尺度窗长100km、每侧50km、步长20km；每侧至少30条有效唯一来源。JSD以2为底，不取根，不合格为NA。不同网络的维度、来源支持不同，不直接按JSD排名优劣。</p>
+<p>双图显示当前可靠窗口或全山脉概览的来源聚合。20km格网与至少5来源是公开展示规则，不参与JSD计算；未单列格网的来源仍进入精确比例和特征表。圆点在格网中心，弹窗可查看格网范围及组成。</p>
+<p>社区图以格网主要社区着色，弹窗保留混合组成；选中特征时，两侧统一用来源命中率0—100%着色。代表字均来自当前范围，不能仅凭字形推断词源、语言或文化身份。</p>
+<p>相对分档复用02j已完成的Fisher-Jenks四档，仅在同网络可靠山脉中比较；不是文化屏障标准。N0是有限全国背景，未代替条件基准或正式显著性检验。语义、独立方言和全国地形证据仍未闭环。</p>
+<p>底图为外部地图服务，加载失败时研究线与聚合数据仍可显示。空间格网来源于冻结数据，不公开原始村级坐标和来源标识。</p><p><a href="applications.html">阅读实际应用意义</a></p>
+</div></details>
+<footer class="page-footer">地名社区与山脉两侧组成差异 · 2026.10.28</footer>
+</main></div>
+<noscript><p class="noscript">交互查询需要浏览器启用 JavaScript。</p></noscript>
+<script src="vendor/leaflet/leaflet.js"></script><script src="app.js?v=20261028-v6"></script>
+</body></html>
